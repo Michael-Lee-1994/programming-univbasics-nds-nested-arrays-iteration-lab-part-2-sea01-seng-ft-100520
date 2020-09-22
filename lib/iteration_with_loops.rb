@@ -12,8 +12,8 @@ def find_min_in_nested_arrays(src)
         largest_int = src[i][j]
       end
       j += 1 
-    end
     new_array << largest_int 
+    end
     i += 1 
   end
   
