@@ -6,12 +6,14 @@ def find_min_in_nested_arrays(src)
   new_array = []
   while i < src.count do
     j = 0 
+    largest_int = 0
     while j < src[i].count do
-      if src[i][j] % 2 == 0
-        p src[i][j]
+      if src[i][j] > largest_int
+        largest_int = src[i][j]
       end
       j += 1 
     end
+    new_array << largest_int 
     i += 1 
   end
   
