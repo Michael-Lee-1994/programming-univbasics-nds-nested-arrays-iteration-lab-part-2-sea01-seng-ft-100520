@@ -8,12 +8,12 @@ def find_min_in_nested_arrays(src)
     j = 0 
     smallest_int = 1000
     while j < src[i].count do
-      if src[i][j] < largest_int
-        largest_int = src[i][j]
+      if src[i][j] < smallest_int
+        smallest_int = src[i][j]
       end
       j += 1 
     end
-    new_array << largest_int 
+    new_array << smallest_int 
     i += 1 
   end
   new_array
